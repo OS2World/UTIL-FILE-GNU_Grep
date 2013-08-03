@@ -1,0 +1,29 @@
+                          Upload Information Template for Hobbes.nmsu.edu
+                          ===============================================
+
+        Archive Filename: grep-251a_ow.zip
+       Short Description: GNU GREP 2.5.1a for OS/2 Open Watcom Version
+        Long Description: GNU GREP 2.5.1a compiled with Open Watcom 1.6.
+                          Not NLS enabled, requires no addtional dlls (static link),
+                          contains PCRE 6.7 lib so -P option will work.
+                          See watcom.readme for more.
+      Proposed directory
+           for placement: /pub/os2/util/file
+
+               Your name: Michael Greene
+           Email address: os2@mgreene.org
+    Program contact name:
+   Program contact email: os2@mgreene.org
+             Program URL: http://www.gnu.org/software/grep/
+
+      Would you like the
+   contact email address
+    included in listings? yes
+
+Operating System/Version: OS/2 MCP or ECS (maybe older)
+ Additional requirements:
+
+                Replaces: none
+
+
+

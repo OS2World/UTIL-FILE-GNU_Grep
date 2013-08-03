@@ -1,0 +1,58 @@
+GREP 2.5.1a
+===========
+
+This is a build of grep 2.5.1a (http://www.gnu.org/software/grep/)
+for OS/2 compiled using Open Watcom 1.6 (http://www.openwatcom.org/).
+
+The executable in the grep-251a_ow.zip archive has been LxLite run on it
+but is still large. It is large for 2 reasons: it is a static link (no
+other dlls are required) and PCRE 6.7 is link into it so the -P option
+should work.
+
+The wildcard matching is from emx/klibc so anything that applies to
+wildcards and the old emx version still applies.
+
+The excutable in not NLS enabled - sorry, but I have no real way to do
+this and test the result.
+
+I did put code parts of this patch in:
+
+Date: 2005-08-13
+Initial Package Version: 2.5.1a
+Upstream Status: Partially accepted, partially rejected, but required
+                 for LSB >= 2.0 certification
+Origin: RedHat
+Description: Various fixes from RedHat.
+
+You can search the source for:
+
+// MKG: REDHAT PATCH 12/22/06
+
+for each patch applied.
+
+
+A patched version of the source can be downloaded from hobbes.nmsu.edu,
+search for grep-251a_ow_src.zip. Unzip the source archive and execute:
+
+wmake <target>
+
+where the target options are one of:
+
+  os2       build os2 release version
+  os2debug  build os2 debug version
+  nt        build nt release version   *
+  ntdebug   build nt debug version     *
+  clean     clean up the build
+  gnuarc    zip archive
+
+Yes, the NT version can be built but is less tested than the OS/2 version.
+
+* to compile the NT version, comment out HAVE_LIBPCRE in config.h
+  I have a link pcre lib
+
+Michael Greene <os2@mgreene.org>
+22 December 2006
+
+irc.netlabs.org   #netlabs  #ecs
+
+
